@@ -1,0 +1,53 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  letter-spacing: 1px;
+}
+
+.card {
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #ffc107;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Ajustes responsive */
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  p, .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
